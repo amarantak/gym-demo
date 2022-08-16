@@ -1,0 +1,462 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  height: 220vh;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+  color: white;
+  background-color: #000000;
+}
+
+.logo {
+  display: grid;
+  grid-area: 1/1/2/2;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+  background-color: #000000;
+  padding: 0.5em;
+}
+.logo img {
+  height: 10vh;
+  justify-content: center;
+}
+.logo h6 {
+  justify-content: center;
+}
+nav {
+  display: grid;
+  grid-area: 1/2/2/19;
+  background-color: #000000;
+  color: #fffefc;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  justify-content: center;
+}
+nav ul {
+  display: inline-flex;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  padding: 0 2em;
+}
+li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.cta-text {
+  display: grid;
+  grid-area: 2/1/10/11;
+  font-family: "Bebas Neue", "cursive";
+  background: rgb(253, 118, 203);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 118, 203, 1) 35%,
+    rgba(255, 172, 48, 1) 100%
+  );
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+  justify-content: left;
+  padding-left: 4vw;
+}
+
+.cta-text h2 {
+  font-size: 7em;
+  letter-spacing: 0.2vw;
+}
+.cta-text a {
+  color: white;
+  font-size: 3em;
+}
+
+.cta-image {
+  display: grid;
+  grid-area: 2/8/10/19;
+  background-image: url(../images/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.content {
+  display: grid;
+  grid-area: 10/1/17/19;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+  align-content: center;
+  justify-content: center;
+  font-family: "Bebas Neue", "cursive";
+}
+
+.content img {
+  width: 80%;
+}
+.content-text {
+  line-height: 1.6em;
+  font-size: 2em;
+}
+
+.content-text a {
+  color: rgba(255, 172, 48, 1);
+}
+
+footer {
+  display: grid;
+  grid-area: 17/1/19/19;
+  font-family: "Bebas Neue", "cursive";
+  background-color: #1b1b1b;
+}
+footer a {
+  color: white;
+}
+footer h4 {
+  font-size: 1.5em;
+}
+.column img {
+  filter: invert(1);
+  background-color: transparent;
+  padding: 0 0.2em;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.column {
+  text-align: center;
+  align-self: center;
+}
+
+.copyright {
+  text-align: center;
+  align-items: center;
+}
+.social {
+  display: inline-flex;
+}
+/***************************About ***********************************/
+.cta2-image {
+  display: grid;
+  grid-area: 2/1/9/19;
+  background-image: url(../images/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-text {
+  display: grid;
+  grid-area: 2/1/10/9;
+  font-family: "Bebas Neue", "cursive";
+}
+.text-content {
+  align-self: center;
+  justify-self: center;
+}
+.about-text h1 {
+  font-size: 7.5em;
+  letter-spacing: 0.2vw;
+}
+.about-text a {
+  color: white;
+  font-size: 3em;
+}
+
+.current {
+  color: rgba(255, 172, 48, 1);
+}
+/***********************Dashboard*******************************/
+
+.wrapper {
+  width: 100vw;
+  height: 220vh;
+  background-color: #ede7e7;
+  font-family: "Bebas Neue", "cursive";
+}
+
+.dashboard-cta {
+  width: 100vw;
+  height: 80vh;
+}
+.dashboard-cta h1,
+.dashboard-cat p {
+  margin-left: 1em;
+  padding-top: 1em;
+}
+
+.dashboard-content {
+  padding: 1em;
+  font-size: 1.2em;
+}
+
+.ctaBox {
+  width: 20vw;
+  background-color: white;
+  float: left;
+  margin: 1em;
+  padding: 0.5em;
+  border: 1px solid black;
+}
+.className{
+  font-size: 1.3em;
+  color: rgba(255, 172, 48, 1);
+}
+
+/***********************Equipment/Time table*******************************/
+
+.equipment-main {
+  display: grid;
+  grid-area: 2/1/17/19;
+  background-color: whitesmoke;
+  color: #000000;
+  justify-content: center;
+ 
+}
+
+.equipment-main a {
+  color: #000000;
+}
+.equipment-content {
+  display: inline-flex;
+  width: 95vw;
+  height: 70vh;
+  margin-top: 10vh;
+ 
+}
+.equip-desc{
+  font-family: "Roboto Condensed", sans-serif;
+  
+}
+
+
+/***********Contact Form*****************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff8f;
+  font-family: "Bebas Neue", "cursive";
+}
+
+#contact {
+  font-family: "Bebas Neue", "cursive";
+  background-color: #ffffff8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box {
+  width: clamp(100px, 90%, 1000px);
+  margin: 80px 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-links,
+.contact-form-wrapper {
+  width: 50%;
+  padding: 8% 5% 10% 5%;
+}
+
+.contact-links {
+  background-color: #7f939c;
+  background: radial-gradient(
+      circle at 55% 92%,
+      #7f939c 0 12%,
+      transparent 12.2%
+    ),
+    radial-gradient(circle at 94% 72%, #7f939c 0 10%, transparent 10.2%),
+    radial-gradient(
+      circle at 20% max(78%, 350px),
+      #7f939c 0 7%,
+      transparent 7.2%
+    ),
+    radial-gradient(circle at 0% 0%, #7f939c 0 40%, transparent 40.2%), #7f939c;
+  border-radius: 10px 0 0 10px;
+}
+
+.contact-form-wrapper {
+  background-color: #ffffff8f;
+  border-radius: 0 10px 10px 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-links,
+  .contact-form-wrapper {
+    width: 100%;
+  }
+
+  .contact-links {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .contact-form-wrapper {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contact-box {
+    width: 95%;
+    margin: 8% 5%;
+  }
+}
+
+#contact h2 {
+  font-family: "Bebas Neue", "cursive";
+  color: #fff;
+  font-size: clamp(30px, 6vw, 60px);
+  letter-spacing: 2px;
+  text-align: center;
+  transform: scale(0.95, 1);
+}
+
+#contact .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+#contact .link {
+  margin: 10px;
+  cursor: pointer;
+}
+
+#contact img {
+  width: 45px;
+  height: 45px;
+  filter: hue-rotate(220deg) drop-shadow(2px 4px 4px #0006);
+  transition: 0.2s;
+  user-select: none;
+}
+
+#contact img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+#contact img:active {
+  transform: scale(1.1, 1.1);
+  filter: hue-rotate(220deg) drop-shadow(2px 4px 4px #222) sepia(0.3);
+}
+
+.form-item {
+  position: relative;
+}
+
+label,
+input,
+textarea {
+  font-family: "Bebas Neue", "cursive";
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  left: 2%;
+  color: #999;
+  font-size: clamp(14px, 1.5vw, 18px);
+  pointer-events: none;
+  user-select: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  outline: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: clamp(15px, 1.5vw, 18px);
+}
+
+input:focus + label,
+input:valid + label,
+textarea:focus + label,
+textarea:valid + label {
+  font-size: clamp(13px, 1.3vw, 16px);
+  color: #777;
+  top: -20px;
+  transition: all 0.225s ease;
+}
+
+.submit-btn {
+  font-family: "Bebas Neue", "cursive";
+  background: rgb(253, 118, 203);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 118, 203, 1) 35%,
+    rgba(255, 172, 48, 1) 100%
+  );
+  background-color: #fd917e;
+  filter: drop-shadow(2px 2px 3px #0003);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(16px, 1.6vw, 18px);
+  display: block;
+  padding: 12px 20px;
+  margin: 2px auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.submit-btn:active {
+  transform: scale(1.1, 1.1);
+  filter: sepia(0.5);
+}
+
+@media only screen and (max-width: 800px) {
+  #contact h2 {
+    font-size: clamp(40px, 10vw, 60px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #contact h2 {
+    font-size: clamp(30px, 12vw, 60px);
+  }
+
+  #contact .links {
+    padding-top: 30px;
+  }
+
+  #contact img {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+table {
+  border: 1px solid black;
+}
+td {
+  margin-right: 1em;
+  border: 1px dashed black;
+  font-size: 1em;
+  text-align: center;
+  padding: 0.2em;
+}
